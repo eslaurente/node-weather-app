@@ -1,4 +1,4 @@
-const getWeather = location => fetch(`http://localhost:3000/weather?address=${encodeURIComponent(location)}`)
+const getWeather = location => fetch(`/weather?address=${encodeURIComponent(location)}`)
     .then(response => response.json())
     .then(data => {
         if (!data.error) {

@@ -9,6 +9,7 @@ var hbs_1 = __importDefault(require("hbs"));
 var geocode_1 = require("./utils/geocode");
 var forecast_1 = require("./utils/forecast");
 var app = express_1.default();
+var PORT = process.env.PORT || 3000;
 // Path for Express config
 var publicDir = path_1.default.join(__dirname, '../public');
 var viewsPath = path_1.default.join(__dirname, '../templates/views');
@@ -87,6 +88,6 @@ app.get('*', function (req, res) {
     });
 });
 // Start server
-app.listen(3000, function () {
+app.listen(PORT, function () {
     console.log('Server is up on port 3000...');
 });
