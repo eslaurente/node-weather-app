@@ -1,12 +1,23 @@
 {{#>root}}
     <script src="/js/app.js"></script>
     <div id="weather-content">
-        <p>Use this site to get your weather!</p>
+        <p>Enter a location anywhere in the world to get the current weather</p>
         <form class="location-input">
             <input type="text" placeholder="Location"/>
             <button>Search</button>
         </form>
-        <p id="message-1"></p>
-        <p id="message-2"></p>
+        <p id="status"></p>
+        <div id="weather-info">
+            <p id="location"></p>
+            <img id="weather-icon" alt="Weather icon"/>
+            <h3>Condition</h3>
+            <p id="condition"></p>
+            <h3>Temperature</h3>
+            <p id="temperature"></p>
+            <h3>Feels Like</h3>
+            <p id="feels-like"></p>
+            <h3>Wind Speed</h3>
+            <p id="wind-speed"></p>
+        </div>
     </div>
 {{/root}}

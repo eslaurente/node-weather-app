@@ -53,3 +53,9 @@ img.portrait {
     color: white;
     padding: 8px;
 }
+
+#weather-content #location {
+    border-top: 2px solid #eeeeee;
+    border-bottom: 2px solid #eeeeee;
+    padding: 16px 0px;
+}
